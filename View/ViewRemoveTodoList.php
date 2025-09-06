@@ -12,7 +12,9 @@ function viewRemoveTodoList()
     $pilihan = input("Nomor (x untuk batalkan)");
 
     if ($pilihan == "x") {
-        echo "batal menghapus todo" . PHP_EOL;
+        $cancel = "batal menghapus todo";
+        echo $cancel . PHP_EOL;
+        echo str_repeat("+", strlen($cancel)) . PHP_EOL;
     } else {
         $success = removeTodoList($pilihan);
 

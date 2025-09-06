@@ -38,10 +38,28 @@ Sebelum memulai, pastikan Anda memiliki:
 
 ```
 studi-kasus-php-dasar-aplikasi-todolist/
-├── index.php       # Halaman utama aplikasi
-├── functions.php   # Fungsi-fungsi utama aplikasi
-├── style.css       # Gaya tampilan aplikasi
-└── README.md       # Dokumentasi proyek
+├── BusinessLogic/
+│   ├── AddTodoList.php
+│   ├── RemoveTodoList.php
+│   └── ShowTodoList.php
+├── Helper/
+│   └── Input.php
+├── Model/
+│   └── TodoList.php
+├── Test/
+│   ├── TestAddTodoList.php
+│   ├── TestInput.php
+│   └── TestRemoveTodoList.php
+│   └── TestShowTodoList.php
+│   └── TestViewAddTodoList.php
+│   └── TestViewRemoveTodoList.php
+│   └── TestViewShowTodoList.php
+├── View/
+│   ├── ViewAddTodoList.php
+│   ├── ViewRemoveTodoList.php
+│   └── ViewShowTodoList.php
+├── app.php
+├── Readme.md
 ```
 
 ## Cara Penggunaan

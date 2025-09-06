@@ -12,7 +12,9 @@ function viewShowTodoList()
     while (true) {
         ShowTodoList();
         if (!$todoList) {
-            echo "Tidak ada data Todo" . PHP_EOL;
+            $kosong = "Tidak ada data Todo";
+            echo $kosong . PHP_EOL;
+            echo str_repeat("=", strlen($kosong)) . PHP_EOL;
         } else {
             echo "+++++++++++++++++++++" . PHP_EOL;
         }
@@ -33,5 +35,7 @@ function viewShowTodoList()
             echo "Pilihan Tidak Ditemukan" . PHP_EOL;
         }
     }
-    echo "Sampai Jumpa Lagi" . PHP_EOL;
+    $goodbye = "Sampai Jumpa Lagi :')";
+    echo $goodbye . PHP_EOL;
+    echo str_repeat("+", strlen($goodbye)) . PHP_EOL;
 }
